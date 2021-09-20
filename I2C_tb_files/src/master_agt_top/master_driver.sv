@@ -104,6 +104,12 @@ endfunction
 //  phase - stores the current phase 
 //-----------------------------------------------------------------------------
 
+
+added the comment
+
+
+
+//--------------------------------------------------------
 task master_driver::run_phase(uvm_phase phase);
 
   fork 
@@ -117,8 +123,7 @@ task master_driver::run_phase(uvm_phase phase);
     begin
  	  seq_item_port.get_next_item(req);
 	  drive_to_dut(req);
-	  seq_item_port.item_done;
-    `uvm_info("MYINFO1","testing info", UVM_LOW);
+	  seq_item_port.item_done;i
     end
 endtask
 
