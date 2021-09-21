@@ -108,7 +108,6 @@ endfunction
 added the comment
 
 
-
 //--------------------------------------------------------
 task master_driver::run_phase(uvm_phase phase);
 
